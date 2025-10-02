@@ -30,7 +30,7 @@ export default function WishList() {
     <>
       {wishListDetails && wishListDetails.data.length > 0 ? (
         <>
-          <section className="py-[130px]">
+          <section className="py-[130px] min-h-screen">
             <div className="container px-2 md:px-0 mx-auto">
               <div>
                 <Table>
