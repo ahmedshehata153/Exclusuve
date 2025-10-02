@@ -4,5 +4,8 @@ import OrdersList from "@/app/component/orders";
 export default async function AllOrders() {
   const orders: ordersResponse = await getUserOrders();
 
-  return <OrdersList orders={orders} />;
+  return 
+  <div className="min-h-screen">
+    <OrdersList orders={orders} />
+  </div>;
 }
