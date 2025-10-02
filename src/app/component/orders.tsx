@@ -1,14 +1,14 @@
 "use client";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ordersResponse } from "@/app/interfaces/allOrders.interface"; // ده الملف اللي فيه الـ types
+import { ordersResponse } from "@/app/interfaces/allOrders.interface"; 
 import Image from "next/image";
 
 
 
 export default function OrdersList({ orders }: { orders: ordersResponse }) {
   return (
-    <div className="grid gap-6 py-6">
+    <div className="grid gap-6 py-6 min-h-screen">
       {orders?.map((order) => (
         <Card key={order?._id} className="shadow-md rounded-2xl">
           <CardHeader className="flex justify-between items-center">
