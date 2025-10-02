@@ -87,7 +87,7 @@ export default function CheckOutForm() {
 
 
   return (
-    <section className="py-11">
+    <section className="py-11 min-h-screen">
       <div className="container px-2 md:px-0 mx-auto w-full md:w-1/2">
         <h2 className="font-bold mb-24 text-5xl text-center">Check Out</h2>
         <Form {...form}>
