@@ -83,7 +83,7 @@ export default function CheckOutForm() {
         clearTimeout(timeOut);
       }
     };
-  }, [action, form, setCartDetails, router]);
+  }, [action]);
 
 
   return (
