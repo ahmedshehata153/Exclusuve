@@ -67,7 +67,7 @@ export default function CheckOutForm() {
             }
           })();
           timeOut = setTimeout(() => {
-            router.push(action.callbackUrl || "all-orders");
+            router.push(action.callbackUrl || "allorders");
           }, 2000);
         } else {
           window.location.href = action.callbackUrl as string;

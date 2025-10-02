@@ -53,7 +53,7 @@ export async function checkOutHandling(
       success: true,
       error: {},
       message: data.message || "all carts ordered successfully",
-      callbackUrl: paymentMethod === "cash" ? "/all-orders" : data.session.url,
+      callbackUrl: paymentMethod === "cash" ? "/allorders" : data.session.url,
     };
   } catch (error) {
     console.log(error);
