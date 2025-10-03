@@ -16,7 +16,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { X } from "lucide-react";
 export default function WishList() {
-  const { wishListDetails,  wishDetailsFun } = useWish();
+  const { wishListDetails, wishDetailsFun } = useWish();
   async function removewish(Id: string) {
     const res = await deleteWishList(Id);
     if (res.status === "success") {
@@ -86,7 +86,7 @@ export default function WishList() {
                             </div>
                           </TableCell>
                           <TableCell>
-                            <div className="flex gap-1 pe-5">
+                            <div className="flex gap-1 ">
                               <h2>LE</h2>
                               <h2>{product.quantity * product.price}</h2>
                             </div>
