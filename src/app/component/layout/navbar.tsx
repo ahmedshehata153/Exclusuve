@@ -186,12 +186,16 @@ const Navbar = () => {
                 </div>
                 <div className="flex gap-x-4 mt-6 ">
                   <Link href="/wishlist" className="relative">
-                    <Badge
-                      variant="destructive"
-                      className="w-2 h-4 absolute start-3.5 top-0 z-40"
-                    >
-                      10
-                    </Badge>
+                    {wishListDetails && (
+                      <>
+                        <Badge
+                          variant="destructive"
+                          className="w-2 h-4 absolute start-3.5 top-0 z-40"
+                        >
+                          {wishListDetails.count}
+                        </Badge>
+                      </>
+                    )}
                     <Heart className="w-[32px] h-[32px]" />
                   </Link>
                   <Link href="/cart" className="relative">
