@@ -100,7 +100,10 @@ export default function Cart() {
                             />
                           </button>
                           <h2 className="sm:self-center">
-                            {product?.product?.title?.split("").slice(1,20).join("")}
+                            {product?.product?.title
+                              ?.split("")
+                              .slice(1, 20)
+                              .join("")}
                           </h2>
                         </div>
                       </TableCell>
@@ -139,8 +142,8 @@ export default function Cart() {
                           </div>
                         </div>
                       </TableCell>
-                      <TableCell className="flex justify-end items-center px-5">
-                        <div className="flex  gap-1">
+                      <TableCell>
+                        <div className="flex gap-1 ps-2">
                           <h2>LE</h2>
                           <h2>{product.price * product.count}</h2>
                         </div>
