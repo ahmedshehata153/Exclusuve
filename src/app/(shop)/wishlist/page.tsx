@@ -85,8 +85,8 @@ export default function WishList() {
                               </h2>
                             </div>
                           </TableCell>
-                          <TableCell className="flex  justify-end px-5">
-                            <div className="flex bg-amber-400 pt-2 gap-1">
+                          <TableCell className="flex items-center  justify-end px-5">
+                            <div className="flex gap-1">
                               <h2>LE</h2>
                               <h2>{product.quantity * product.price}</h2>
                             </div>

@@ -139,8 +139,8 @@ export default function Cart() {
                           </div>
                         </div>
                       </TableCell>
-                      <TableCell className="flex justify-end px-5">
-                        <div className="flex pt-2 gap-1">
+                      <TableCell className="flex justify-end items-center px-5">
+                        <div className="flex  gap-1">
                           <h2>LE</h2>
                           <h2>{product.price * product.count}</h2>
                         </div>
