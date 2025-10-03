@@ -143,7 +143,7 @@ export default function Cart() {
                         </div>
                       </TableCell>
                       <TableCell>
-                        <div className="flex gap-1 ps-2">
+                        <div className="flex gap-1 ps-6">
                           <h2>LE</h2>
                           <h2>{product.price * product.count}</h2>
                         </div>
