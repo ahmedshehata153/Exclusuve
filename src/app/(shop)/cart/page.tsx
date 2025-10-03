@@ -144,7 +144,7 @@ export default function Cart() {
                       </TableCell>
                       <TableCell className="text-right">
                         <span>LE</span>
-                        <span className="ms-0.5">{product.price * product.count}</span>
+                        <span className="ms-0.5 inline-block">{product.price * product.count}</span>
                       </TableCell>
                     </TableRow>
                   ))}

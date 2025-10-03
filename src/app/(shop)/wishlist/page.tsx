@@ -87,7 +87,7 @@ export default function WishList() {
                           </TableCell>
                           <TableCell className="text-right">
                             <span>LE</span>
-                            <span className="ms-0.5">
+                            <span className="ms-0.5 inline-block">
                               {product.quantity * product.price}
                             </span>
                           </TableCell>
